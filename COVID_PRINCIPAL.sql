@@ -1,9 +1,10 @@
+create table curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL as(
 WITH 
 dicionario_v1022 AS (
     SELECT
         chave AS chave_v1022,
         valor AS descricao_v1022
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'v1022'
@@ -13,7 +14,7 @@ dicionario_a001a AS (
     SELECT
         chave AS chave_a001a,
         valor AS descricao_a001a
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'a001a'
@@ -23,7 +24,7 @@ dicionario_a003 AS (
     SELECT
         chave AS chave_a003,
         valor AS descricao_a003
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'a003'
@@ -33,7 +34,7 @@ dicionario_a004 AS (
     SELECT
         chave AS chave_a004,
         valor AS descricao_a004
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'a004'
@@ -43,7 +44,7 @@ dicionario_a005 AS (
     SELECT
         chave AS chave_a005,
         valor AS descricao_a005
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'a005'
@@ -53,7 +54,7 @@ dicionario_a006 AS (
     SELECT
         chave AS chave_a006,
         valor AS descricao_a006
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'a006'
@@ -63,7 +64,7 @@ dicionario_b0011 AS (
     SELECT
         chave AS chave_b0011,
         valor AS descricao_b0011
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0011'
@@ -73,7 +74,7 @@ dicionario_b0012 AS (
     SELECT
         chave AS chave_b0012,
         valor AS descricao_b0012
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0012'
@@ -83,7 +84,7 @@ dicionario_b0013 AS (
     SELECT
         chave AS chave_b0013,
         valor AS descricao_b0013
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0013'
@@ -93,7 +94,7 @@ dicionario_b0014 AS (
     SELECT
         chave AS chave_b0014,
         valor AS descricao_b0014
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0014'
@@ -103,7 +104,7 @@ dicionario_b0015 AS (
     SELECT
         chave AS chave_b0015,
         valor AS descricao_b0015
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0015'
@@ -113,7 +114,7 @@ dicionario_b0016 AS (
     SELECT
         chave AS chave_b0016,
         valor AS descricao_b0016
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0016'
@@ -123,7 +124,7 @@ dicionario_b0017 AS (
     SELECT
         chave AS chave_b0017,
         valor AS descricao_b0017
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0017'
@@ -133,7 +134,7 @@ dicionario_b0018 AS (
     SELECT
         chave AS chave_b0018,
         valor AS descricao_b0018
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0018'
@@ -143,7 +144,7 @@ dicionario_b0019 AS (
     SELECT
         chave AS chave_b0019,
         valor AS descricao_b0019
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0019'
@@ -153,7 +154,7 @@ dicionario_b00110 AS (
     SELECT
         chave AS chave_b00110,
         valor AS descricao_b00110
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b00110'
@@ -163,7 +164,7 @@ dicionario_b00111 AS (
     SELECT
         chave AS chave_b00111,
         valor AS descricao_b00111
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b00111'
@@ -173,7 +174,7 @@ dicionario_b00112 AS (
     SELECT
         chave AS chave_b00112,
         valor AS descricao_b00112
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b00112'
@@ -183,7 +184,7 @@ dicionario_b00113 AS (
     SELECT
         chave AS chave_b00113,
         valor AS descricao_b00113
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b00113'
@@ -193,7 +194,7 @@ dicionario_b002 AS (
     SELECT
         chave AS chave_b002,
         valor AS descricao_b002
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b002'
@@ -203,7 +204,7 @@ dicionario_b0032 AS (
     SELECT
         chave AS chave_b0032,
         valor AS descricao_b0032
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0032'
@@ -213,7 +214,7 @@ dicionario_b0033 AS (
     SELECT
         chave AS chave_b0033,
         valor AS descricao_b0033
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0033'
@@ -223,7 +224,7 @@ dicionario_b0034 AS (
     SELECT
         chave AS chave_b0034,
         valor AS descricao_b0034
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0034'
@@ -233,7 +234,7 @@ dicionario_b0035 AS (
     SELECT
         chave AS chave_b0035,
         valor AS descricao_b0035
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0035'
@@ -243,7 +244,7 @@ dicionario_b0036 AS (
     SELECT
         chave AS chave_b0036,
         valor AS descricao_b0036
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0036'
@@ -253,7 +254,7 @@ dicionario_b0037 AS (
     SELECT
         chave AS chave_b0037,
         valor AS descricao_b0037
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0037'
@@ -263,7 +264,7 @@ dicionario_b0041 AS (
     SELECT
         chave AS chave_b0041,
         valor AS descricao_b0041
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0041'
@@ -273,7 +274,7 @@ dicionario_b0042 AS (
     SELECT
         chave AS chave_b0042,
         valor AS descricao_b0042
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0042'
@@ -283,7 +284,7 @@ dicionario_b0043 AS (
     SELECT
         chave AS chave_b0043,
         valor AS descricao_b0043
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0043'
@@ -293,7 +294,7 @@ dicionario_b0044 AS (
     SELECT
         chave AS chave_b0044,
         valor AS descricao_b0044
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0044'
@@ -303,7 +304,7 @@ dicionario_b0046 AS (
     SELECT
         chave AS chave_b0046,
         valor AS descricao_b0046
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0046'
@@ -313,7 +314,7 @@ dicionario_b005 AS (
     SELECT
         chave AS chave_b005,
         valor AS descricao_b005
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b005'
@@ -323,7 +324,7 @@ dicionario_b006 AS (
     SELECT
         chave AS chave_b006,
         valor AS descricao_b006
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b006'
@@ -333,7 +334,7 @@ dicionario_b007 AS (
     SELECT
         chave AS chave_b007,
         valor AS descricao_b007
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b007'
@@ -343,7 +344,7 @@ dicionario_b008 AS (
     SELECT
         chave AS chave_b008,
         valor AS descricao_b008
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b008'
@@ -353,7 +354,7 @@ dicionario_b009a AS (
     SELECT
         chave AS chave_b009a,
         valor AS descricao_b009a
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b009a'
@@ -363,7 +364,7 @@ dicionario_b009b AS (
     SELECT
         chave AS chave_b009b,
         valor AS descricao_b009b
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b009b'
@@ -373,7 +374,7 @@ dicionario_b009c AS (
     SELECT
         chave AS chave_b009c,
         valor AS descricao_b009c
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b009c'
@@ -383,7 +384,7 @@ dicionario_b009d AS (
     SELECT
         chave AS chave_b009d,
         valor AS descricao_b009d
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b009d'
@@ -393,7 +394,7 @@ dicionario_b009e AS (
     SELECT
         chave AS chave_b009e,
         valor AS descricao_b009e
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b009e'
@@ -403,7 +404,7 @@ dicionario_b009f AS (
     SELECT
         chave AS chave_b009f,
         valor AS descricao_b009f
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b009f'
@@ -413,7 +414,7 @@ dicionario_b0101 AS (
     SELECT
         chave AS chave_b0101,
         valor AS descricao_b0101
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0101'
@@ -423,7 +424,7 @@ dicionario_b0102 AS (
     SELECT
         chave AS chave_b0102,
         valor AS descricao_b0102
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0102'
@@ -433,7 +434,7 @@ dicionario_b0103 AS (
     SELECT
         chave AS chave_b0103,
         valor AS descricao_b0103
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0103'
@@ -443,7 +444,7 @@ dicionario_b0104 AS (
     SELECT
         chave AS chave_b0104,
         valor AS descricao_b0104
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0104'
@@ -453,7 +454,7 @@ dicionario_b0105 AS (
     SELECT
         chave AS chave_b0105,
         valor AS descricao_b0105
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0105'
@@ -463,7 +464,7 @@ dicionario_b0106 AS (
     SELECT
         chave AS chave_b0106,
         valor AS descricao_b0106
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0106'
@@ -473,7 +474,7 @@ dicionario_b011 AS (
     SELECT
         chave AS chave_b011,
         valor AS descricao_b011
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b011'
@@ -483,7 +484,7 @@ dicionario_c001 AS (
     SELECT
         chave AS chave_c001,
         valor AS descricao_c001
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c001'
@@ -493,7 +494,7 @@ dicionario_c002 AS (
     SELECT
         chave AS chave_c002,
         valor AS descricao_c002
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c002'
@@ -503,7 +504,7 @@ dicionario_c003 AS (
     SELECT
         chave AS chave_c003,
         valor AS descricao_c003
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c003'
@@ -513,7 +514,7 @@ dicionario_c004 AS (
     SELECT
         chave AS chave_c004,
         valor AS descricao_c004
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c004'
@@ -523,7 +524,7 @@ dicionario_c005 AS (
     SELECT
         chave AS chave_c005,
         valor AS descricao_c005
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c005'
@@ -533,7 +534,7 @@ dicionario_c006 AS (
     SELECT
         chave AS chave_c006,
         valor AS descricao_c006
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c006'
@@ -543,7 +544,7 @@ dicionario_c007 AS (
     SELECT
         chave AS chave_c007,
         valor AS descricao_c007
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c007'
@@ -553,7 +554,7 @@ dicionario_c007b AS (
     SELECT
         chave AS chave_c007b,
         valor AS descricao_c007b
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c007b'
@@ -563,7 +564,7 @@ dicionario_c007c AS (
     SELECT
         chave AS chave_c007c,
         valor AS descricao_c007c
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c007c'
@@ -573,7 +574,7 @@ dicionario_c007e AS (
     SELECT
         chave AS chave_c007e,
         valor AS descricao_c007e
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c007e'
@@ -583,7 +584,7 @@ dicionario_c007f AS (
     SELECT
         chave AS chave_c007f,
         valor AS descricao_c007f
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c007f'
@@ -593,7 +594,7 @@ dicionario_c0101 AS (
     SELECT
         chave AS chave_c0101,
         valor AS descricao_c0101
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c0101'
@@ -603,7 +604,7 @@ dicionario_c01011 AS (
     SELECT
         chave AS chave_c01011,
         valor AS descricao_c01011
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'c01011'
@@ -613,7 +614,7 @@ dicionario_d0051 AS (
     SELECT
         chave AS chave_d0051,
         valor AS descricao_d0051
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'd0051'
@@ -623,7 +624,7 @@ dicionario_e001 AS (
     SELECT
         chave AS chave_e001,
         valor AS descricao_e001
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'e001'
@@ -633,7 +634,7 @@ dicionario_f001 AS (
     SELECT
         chave AS chave_f001,
         valor AS descricao_f001
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'f001'
@@ -643,7 +644,7 @@ dicionario_f002a1 AS (
     SELECT
         chave AS chave_f002a1,
         valor AS descricao_f002a1
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'f002a1'
@@ -653,7 +654,7 @@ dicionario_f002a2 AS (
     SELECT
         chave AS chave_f002a2,
         valor AS descricao_f002a2
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'f002a2'
@@ -663,7 +664,7 @@ dicionario_f002a3 AS (
     SELECT
         chave AS chave_f002a3,
         valor AS descricao_f002a3
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'f002a3'
@@ -673,7 +674,7 @@ dicionario_f002a4 AS (
     SELECT
         chave AS chave_f002a4,
         valor AS descricao_f002a4
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'f002a4'
@@ -683,7 +684,7 @@ dicionario_f002a5 AS (
     SELECT
         chave AS chave_f002a5,
         valor AS descricao_f002a5
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'f002a5'
@@ -693,7 +694,7 @@ dicionario_b0045 AS (
     SELECT
         chave AS chave_b0045,
         valor AS descricao_b0045
-    FROM `basedosdados.br_ibge_pnad_covid.dicionario`
+    FROM `basedosdados.br_ibge_pnad_covid.dicionario` --Base dicionario para sabermos as respostas na base principal 
     WHERE
         TRUE
         AND nome_coluna = 'b0045'
@@ -798,7 +799,7 @@ SELECT
     descricao_f002a4 AS flg_no_domicilio_possui_luvas_descartaveis,
     descricao_f002a5 AS flg_no_domicilio_possui_sanitaria_desifentante
 
-FROM `basedosdados.br_ibge_pnad_covid.microdados` AS dados
+FROM `basedosdados.br_ibge_pnad_covid.microdados` AS dados --Base principal de exploração dos dados de covid
 LEFT JOIN (SELECT DISTINCT sigla,nome  FROM `basedosdados.br_bd_diretorios_brasil.uf`) AS diretorio_sigla_uf
     ON dados.sigla_uf = diretorio_sigla_uf.sigla
 LEFT JOIN `dicionario_v1022`
@@ -943,6 +944,8 @@ LEFT JOIN `dicionario_b0045`
     ON dados.b0045 = chave_b0045
 where last_day(PARSE_DATE('%Y %m %e', concat(cast(dados.ano as string),' ',cast(dados.mes as string),' 01')),month) >= '2020-09-30')
 
+
+
 select *
 ,if(flg_teve_dor_de_cabeca = "Sim" 
     or flg_nariz_entupido_ou_escorrendo = "Sim"
@@ -997,6 +1000,6 @@ select *
     or flg_atendimento_foi_pronto_socorro_privado_ou_ligado_forcas_armadas = 'Sim'
     or flg_buscou_atendimento_buscou_atendimento_hospital_privado_ou_forcas_armadas = 'Sim'
     ,TRUE, FALSE) as flg_foi_centro_medico
-
 from base_final
+)
 

@@ -1,3 +1,4 @@
+create table curso-big-query-383701.tech_challenge.TESTE_COVID as (
 SELECT
 case when exame = 'flg_exame_coleta_sangue_veia' then 'Exame de coleta de sangue'
 when exame = 'flg_exame_cotonete_boca_e_ou_nariz' then 'Exame com cotonete na boca e/ou nariz (SWAB)'
@@ -24,7 +25,7 @@ FROM (
   SELECT
     *
   FROM
-    `curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL` 
+    `curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL` -- Substitua pelo caminho correto do seu projeto e tabela
   UNPIVOT (
     Resposta FOR exame IN (
     flg_exame_cotonete_boca_e_ou_nariz,
@@ -51,3 +52,4 @@ exame
 ,nam_faixa_valor_recebido
 ,nam_solicitou_emprestimo
 ,nam_tipo_domicilio
+)

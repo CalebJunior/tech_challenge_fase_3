@@ -1,4 +1,4 @@
-SELECT
+create table curso-big-query-383701.tech_challenge.SINTOMAS as (SELECT
 case
 when sintoma = 'flg_teve_dor_de_cabeca' then 'Dor de cabeça'
 when sintoma = 'flg_teve_dor_garganta' then 'Dor de garganta'
@@ -35,7 +35,7 @@ FROM (
   SELECT
     *
   FROM
-    `curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL` 
+    `curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL` -- Substitua pelo caminho correto do seu projeto e tabela
   UNPIVOT (
     Resposta FOR Sintoma IN (
       flg_teve_dor_de_cabeca,
@@ -72,3 +72,4 @@ Sintoma
 ,nam_faixa_valor_recebido
 ,nam_solicitou_emprestimo
 ,nam_tipo_domicilio
+)

@@ -1,3 +1,5 @@
+create table curso-big-query-383701.tech_challenge.CENTRO_MEDICO as(
+
 SELECT
 case 
   when centro = 'flg_atendimento_foi_pronto_socorro_privado_ou_ligado_forcas_armadas' then 'Foi ao pronto socorro privado ou ligado as forças armadas'
@@ -27,7 +29,7 @@ FROM (
   SELECT
     *
   FROM
-    `curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL` 
+    `curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL` -- Substitua pelo caminho correto do seu projeto e tabela
   UNPIVOT (
     Resposta FOR centro IN (
     flg_buscou_atendimento_posto_saude_ou_equipe_saude_da_familia,
@@ -56,4 +58,4 @@ centro
 ,nam_faixa_valor_recebido
 ,nam_solicitou_emprestimo
 ,nam_tipo_domicilio
-
+)

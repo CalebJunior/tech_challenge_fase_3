@@ -1,3 +1,4 @@
+create table curso-big-query-383701.tech_challenge.INTERNACAO as(
 SELECT
 case when internado = 'flg_buscou_hospital_e_ficou_internado_por_um_ou_mais_dias' then 'Buscou um hospital e ficou internado por um ou mais dias'
 when internado = 'flg_sedado_entubado_respiracao_artificial' then 'Foi sedado, entubado e colocado em respiração artificial'
@@ -23,7 +24,7 @@ FROM (
   SELECT
     *
   FROM
-    `curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL` 
+    `curso-big-query-383701.tech_challenge.TBL_COVID_PRINCIPAL` -- Substitua pelo caminho correto do seu projeto e tabela
   UNPIVOT (
     Resposta FOR internado IN (
     flg_buscou_hospital_e_ficou_internado_por_um_ou_mais_dias,
@@ -48,6 +49,6 @@ internado
 ,des_carteira_assinada_ou_func_publico
 ,nam_faixa_valor_recebido
 ,nam_solicitou_emprestimo
-,nam_tipo_domicilio
+,nam_tipo_domicilio)
 
 

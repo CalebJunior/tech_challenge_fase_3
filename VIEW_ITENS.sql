@@ -1,3 +1,4 @@
+create table curso-big-query-383701.tech_challenge.ITENS as(
 SELECT
 case when item ='flg_no_domicilio_possui_sabao_e_detergente' then 'Domicílio possui sabão e detergente'
 when item ='flg_no_domicilio_possui_alcool_70_ou_superior' then 'Domicílio possui álcool 70 ou superior'
@@ -55,3 +56,4 @@ Item
 ,nam_faixa_valor_recebido
 ,nam_solicitou_emprestimo
 ,nam_tipo_domicilio
+)
